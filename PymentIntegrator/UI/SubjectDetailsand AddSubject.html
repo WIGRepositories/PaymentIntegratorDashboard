@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Subjec Details</title>
+</head>
+<body ng-app="subjectgetpost" ng-controller="subjectCtrl">
+
+    <script src="js/angular.js"></script>
+    <script src="js/SubjectDetailsandAddSubject.js"></script>
+
+    
+    
+    <table width="100%">
+        <tr>
+
+            <td width="25%"></td>
+            <td width="50%">
+                <table>
+                    <tr>
+                        <td width="50%"><h1>Subject Details</h1></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td>Select Subject:</td>
+                        <td> <select ng-model="dd"><option ng-repeat="n in getsubjectdetails">{{n.Name}}</option></select></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+
+                        <td>You have selected:</td><td> <b>{{dd}}</b> Subject</td>
+                    </tr>
+                  
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="2"> <h1>Add Subject</h1></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Subject:</td>
+                        <td><input type="text" placeholder="Enter Subject Name"/></td>
+                    </tr>
+                    <tr>
+                        <td>Select Department Id:</td>
+                        <td><input type="text" ng-model="s.sname" placeholder="Enter Subject Name" value="subject" /></td>
+                    </tr>
+                    <tr>
+                        <td>Created By:</td>
+                        <td><input type="text" ng-model="s.sperson" placeholder="Enter Created Name" value="cpersonname" /></td>
+                    </tr>
+                    <tr>
+                        <td>UpdatedOn:</td>
+                        <td><input type="date" ng-model="s.sperson" placeholder="Enter Subject Name" value="cpersonname" /></td>
+                    </tr> 
+    </table>
+            </td>
+            <td width="25%"></td>
+        </tr>
+
+    </table>
+    <table>
+        
+
+    
+</body>
+</html>
